@@ -1,6 +1,6 @@
 /*  Name: <Ali Rashidinejad>
  *  COSC 311  FA19
- *  pp1008
+ *  pp2
  *  URL:  https://github.com/arashidi21/InternalAndExternalMergeSort
  */
 import java.util.Random;
