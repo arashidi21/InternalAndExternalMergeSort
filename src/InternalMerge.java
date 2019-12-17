@@ -16,6 +16,7 @@ public class InternalMerge {
             start=System.nanoTime();
             mergeSort(arr);
             end=System.nanoTime();
+            //Prints out time in milliseconds, currentMilliseconds wasn't working to my liking
             System.out.println((end-start)/1000000.0);
         }
     }

@@ -19,6 +19,7 @@ public class ExternalMergeSort {
         }
         f1.close();
     }
+    //This is just to make main look more pretty.
     private static void mergeSort(RandomAccessFile f1) throws IOException {
         RandomAccessFile f2 = new RandomAccessFile("helper.raf", "rw");
         f1.seek(0);
@@ -27,6 +28,7 @@ public class ExternalMergeSort {
         start = System.nanoTime();
         sort(f1, f2, f1Length, totalPasses(f1), 0);
         end = System.nanoTime();
+        //Print out time in milliseconds, currentMilliseconds wasn't working to my liking
         System.out.println((end - start)/1000000);
         if(f2.length()!=0){
             f1.setLength(0);
@@ -36,6 +38,7 @@ public class ExternalMergeSort {
                 f1.writeInt(tmp);
             }
         }
+        //Readies the file to be read if necessary
         f1.seek(0);
         f2.close();
     }
